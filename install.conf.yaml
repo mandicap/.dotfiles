@@ -2,13 +2,12 @@
     link:
         relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.oh-my-zsh/custom']
 
 - link:
-    ~/.oh-my-zsh/custom/my-aliases.zsh: .oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/aliases.zsh: .oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: .oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
     ~/.curlrc: .curlrc
-    ~/.gitattributes: .gitattributes
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
     ~/.hushlogin: .hushlogin
@@ -16,7 +15,9 @@
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
     ~/.wgetrc: .wgetrc
-    ~/.zshrc: .zshrc
+    ~/.zshrc:
+        force: true
+        path: .zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
