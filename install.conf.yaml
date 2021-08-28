@@ -5,9 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.aliases: .aliases
+    ~/.oh-my-zsh/custom/my-aliases.zsh: .oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: .oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
     ~/.curlrc: .curlrc
-    ~/.functions: .functions
     ~/.gitattributes: .gitattributes
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
