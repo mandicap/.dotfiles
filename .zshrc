@@ -1,3 +1,6 @@
+# For signing commits
+export GPG_TTY=$TTY
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
