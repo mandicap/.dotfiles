@@ -10,16 +10,15 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
-call plug#begin('~/.vim/plugged')
-    Plug 'drewtempelmeyer/palenight.vim'
+call plug#begin(expand('~/.vim/plugged'))
+    Plug 'arcticicestudio/nord-vim'
     Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
-set background=dark
-colorscheme palenight
+colorscheme nord
 
-let g:lightline = { 'colorscheme': 'palenight' }
-let g:airline_theme = "palenight"
+let g:lightline = { 'colorscheme': 'nord' }
+let g:airline_theme = "nord"
 
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >

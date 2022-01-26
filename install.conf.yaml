@@ -5,14 +5,14 @@
 - clean: ['~', '~/.oh-my-zsh/custom']
 
 - link:
-    ~/.oh-my-zsh/custom/aliases.zsh: .oh-my-zsh/custom/aliases.zsh
+    ~/.oh-my-zsh/custom/aliases.zsh:
+        force: true
+        path: .oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: .oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
     ~/.curlrc: .curlrc
-    ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
     ~/.hushlogin: .hushlogin
     ~/.inputrc: .inputrc
-    ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
     ~/.wgetrc: .wgetrc
     ~/.zshrc:
